@@ -12,24 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Ychitel.View.Pages;
 
-namespace Ychitel
+namespace Ychitel.View.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для ListTeacherPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ListTeacherPage : Page
     {
-        public MainWindow()
+        public ListTeacherPage()
         {
             InitializeComponent();
-            MainFrame.Navigate(new AuthPages());
-        }
-
-        private void BackButtonClick(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
