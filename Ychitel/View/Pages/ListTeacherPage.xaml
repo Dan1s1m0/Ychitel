@@ -9,6 +9,23 @@
       Title="ListTeacherPage">
 
     <Grid>
-        
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <UniformGrid>
+                <Button x:Name="NewStudentButton" Click="NewStudentButtonClick">Добавить студента</Button>
+            </UniformGrid>
+            <UniformGrid>
+                <Button x:Name="NewGradButton" Click="NewGradButtonClick">Добавить оценку</Button>
+            </UniformGrid>
+            <UniformGrid>
+                <Button x:Name="StudentButton" Click="StudentButtonClick">Список студентов</Button>
+            </UniformGrid>
+            <UniformGrid>
+                <Button x:Name="SelectedGradButton" Click="SelectedGradClick">Редактировать оценку</Button>
+            </UniformGrid>
+            <UniformGrid>
+                <Button x:Name="DeleteGratButton" Click="DeleteGratClick">Удалить оценку</Button>
+            </UniformGrid>
+        </StackPanel>
+
     </Grid>
 </Page>

@@ -24,5 +24,30 @@ namespace Ychitel.View.Pages
         {
             InitializeComponent();
         }
+
+        private void NewStudentButtonClick(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new NewStudent());
+        }
+
+        private void NewGradButtonClick(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void StudentButtonClick(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new ListStudentPage());
+        }
+
+        private void SelectedGradClick(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DeleteGratClick(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

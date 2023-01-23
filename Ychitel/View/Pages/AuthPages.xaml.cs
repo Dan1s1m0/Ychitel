@@ -54,7 +54,7 @@ namespace Ychitel.View.Pages
                     {
 
                         case 1:
-                            this.NavigationService.Navigate(new ListStudentPage());
+                            this.NavigationService.Navigate(new StudentPage());
 
                             break;
                         case 2:
