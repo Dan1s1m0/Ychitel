@@ -31,10 +31,13 @@ namespace Ychitel.View.Pages
             SpecComboBox.SelectedValuePath = "IdProfession";
             GodComboBox.ItemsSource = db.context.YearAdd.ToList();
             GodComboBox.DisplayMemberPath = "Year";
+            GodComboBox.SelectedValuePath = "idYear";
             FormComboBox.ItemsSource = db.context.FormTime.ToList();
             FormComboBox.DisplayMemberPath = "Name";
+            FormComboBox.SelectedValuePath = "Id";
             NameComboBox.ItemsSource = db.context.Groups.ToList();
             NameComboBox.DisplayMemberPath = "NameGroup";
+            NameComboBox.SelectedValuePath = "IdGroup";
         }
 
 
@@ -43,12 +46,18 @@ namespace Ychitel.View.Pages
             try
             {
                 int idProf = Convert.ToInt32(SpecComboBox.SelectedValue);
+                int idYears = Convert.ToInt32(GodComboBox.SelectedValue);
+                int idName = Convert.ToInt32(FormComboBox.SelectedValue);
+                int idGr = Convert.ToInt32(NameComboBox.SelectedValue);
                 Students newStudents = new Students()
                 {
                     FiestName = RegFameliaTextBlock.Text,
                     LastName = RegNameTxtBlock.Text,
                     PatronomicName = RegOtchestvoTeBlock.Text,
                     IdProfession= idProf,
+                    IdYearAdd = idYears,
+                    IdFormTime = idName,
+                    IdGroup = idGr,
                 };
 
                 db.context.Students.Add(newStudents);
@@ -62,7 +71,7 @@ namespace Ychitel.View.Pages
             }
             catch
             {
-                MessageBox.Show("Критический сбор в работе приложения:", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Критический сбой в работе приложения:", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
     }
