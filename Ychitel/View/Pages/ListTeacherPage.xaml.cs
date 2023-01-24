@@ -30,9 +30,9 @@ namespace Ychitel.View.Pages
             this.NavigationService.Navigate(new NewStudent());
         }
 
-        private void NewGradButtonClick(object sender, RoutedEventArgs e)
+        private void NewGradeButtonClick(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new GradePage());
         }
 
         private void StudentButtonClick(object sender, RoutedEventArgs e)
@@ -40,14 +40,14 @@ namespace Ychitel.View.Pages
             this.NavigationService.Navigate(new ListStudentPage());
         }
 
-        private void SelectedGradClick(object sender, RoutedEventArgs e)
+        private void SelectedGradeClick(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void DeleteGratClick(object sender, RoutedEventArgs e)
+        private void DeleteGradeClick(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new DeletePage());
         }
     }
 }

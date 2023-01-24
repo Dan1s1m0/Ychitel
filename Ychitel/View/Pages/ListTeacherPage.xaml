@@ -14,16 +14,16 @@
                 <Button x:Name="NewStudentButton" Click="NewStudentButtonClick">Добавить студента</Button>
             </UniformGrid>
             <UniformGrid>
-                <Button x:Name="NewGradButton" Click="NewGradButtonClick">Добавить оценку</Button>
+                <Button x:Name="NewGradeButton" Click="NewGradeButtonClick">Добавить оценку</Button>
             </UniformGrid>
             <UniformGrid>
                 <Button x:Name="StudentButton" Click="StudentButtonClick">Список студентов</Button>
             </UniformGrid>
             <UniformGrid>
-                <Button x:Name="SelectedGradButton" Click="SelectedGradClick">Редактировать оценку</Button>
+                <Button x:Name="SelectedGradeButton" Click="SelectedGradeClick">Редактировать оценку</Button>
             </UniformGrid>
             <UniformGrid>
-                <Button x:Name="DeleteGratButton" Click="DeleteGratClick">Удалить оценку</Button>
+                <Button x:Name="DeleteGradeButton" Click="DeleteGradeClick">Удалить оценку</Button>
             </UniformGrid>
         </StackPanel>
 

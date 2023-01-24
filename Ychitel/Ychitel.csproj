@@ -68,6 +68,12 @@
     <Compile Include="View\Pages\AuthPages.xaml.cs">
       <DependentUpon>AuthPages.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Pages\DeletePage.xaml.cs">
+      <DependentUpon>DeletePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\GradePage.xaml.cs">
+      <DependentUpon>GradePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Pages\ListStudentPage.xaml.cs">
       <DependentUpon>ListStudentPage.xaml</DependentUpon>
     </Compile>
@@ -96,6 +102,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="View\Pages\AuthPages.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\DeletePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\GradePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
