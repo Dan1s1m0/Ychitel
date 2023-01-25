@@ -29,9 +29,10 @@ namespace Ychitel
 
         private void BackButtonClick(object sender, RoutedEventArgs e)
         {
-            this.Close();
-            Window frm = new Window();
-            frm.Show();
+            if (MainFrame.CanGoBack)
+            {
+                MainFrame.GoBack();
+            }
 
         }
     }

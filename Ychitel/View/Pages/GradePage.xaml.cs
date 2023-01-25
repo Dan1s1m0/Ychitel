@@ -63,9 +63,10 @@ namespace Ychitel.View.Pages
                 Journals newJournals = new Journals()
                 {
                     Evaluation = Convert.ToInt32(OcenkaTextBlock.Text),
-                    IdGroup = Convert.ToInt32(idGroup),
+                  
                     IdStudent= Convert.ToInt32(idStudent),
                     IdSubject = Convert.ToInt32(idProfession),
+                    DateEvalution=DateTime.Now,
                 };
 
                 db.context.Journals.Add(newJournals);

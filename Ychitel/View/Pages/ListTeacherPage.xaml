@@ -23,7 +23,7 @@
                 <Button x:Name="SelectedGradeButton" Click="SelectedGradeClick">Редактировать оценку</Button>
             </UniformGrid>
             <UniformGrid>
-                <Button x:Name="DeleteGradeButton" Click="DeleteGradeClick">Удалить оценку</Button>
+                <Button x:Name="DeleteGradeButton" Click="DeleteGradeClick">Удалить Студента</Button>
             </UniformGrid>
         </StackPanel>
 

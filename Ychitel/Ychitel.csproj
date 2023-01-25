@@ -71,6 +71,9 @@
     <Compile Include="View\Pages\DeletePage.xaml.cs">
       <DependentUpon>DeletePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Pages\EditPage.xaml.cs">
+      <DependentUpon>EditPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Pages\GradePage.xaml.cs">
       <DependentUpon>GradePage.xaml</DependentUpon>
     </Compile>
@@ -106,6 +109,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Pages\DeletePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\EditPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

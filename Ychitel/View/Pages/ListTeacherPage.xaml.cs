@@ -42,7 +42,7 @@ namespace Ychitel.View.Pages
 
         private void SelectedGradeClick(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new EditPage());
         }
 
         private void DeleteGradeClick(object sender, RoutedEventArgs e)

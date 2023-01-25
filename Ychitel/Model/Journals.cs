@@ -18,9 +18,8 @@ namespace Ychitel.Model
         public int IdStudent { get; set; }
         public Nullable<int> IdSubject { get; set; }
         public Nullable<int> Evaluation { get; set; }
-        public Nullable<int> IdGroup { get; set; }
+        public Nullable<System.DateTime> DateEvalution { get; set; }
     
-        public virtual Groups Groups { get; set; }
         public virtual Students Students { get; set; }
         public virtual Subjects Subjects { get; set; }
     }

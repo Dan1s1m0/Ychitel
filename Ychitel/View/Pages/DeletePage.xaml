@@ -47,7 +47,7 @@
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" >
-            <Button x:Name="ButtonTextBox" >Удалить</Button>
+            <Button x:Name="ButtonTextBox" Click="ButtonTextBoxClick" >Удалить</Button>
         </StackPanel>
     </Grid>
 </Page>
